@@ -1,17 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Title</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style/style.css">
-        <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class="container home-page">
-        </div>
-        <script src="js/index.js" async defer></script>
-    </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Title</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="style/style.css" />
+		<link rel="stylesheet" href="style/tweet.css" />
+		<script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="container home-page">
+			<nav class="navigation-container">
+				<div class="logo">
+					<a href="#">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+				<div class="home">
+					<a href="#">
+						<i class="fas fa-home"></i>
+					</a>
+				</div>
+				<div class="hashtag">
+					<a href="#">
+						<i class="fas fa-hashtag"></i>
+					</a>
+				</div>
+				<div class="profile-container">
+					<a href="#">
+						<i class="far fa-user-circle"></i>
+					</a>
+				</div>
+			</nav>
+			<main class="main">
+				<div class="tweets-search-container">
+					<input id="tweets-search" type="text" placeholder="Search Twitter ..." />
+					<i class="fas fa-search fa-flip-horizontal"></i>
+				</div>
+				<div class="tweets-list-container">
+					<div class="tweet-container">
+						<div class="tweet-user-info">
+							<div class="tweet-user-profile"></div>
+							<div class="tweet-user-name-container">
+								<div class="tweet-user-fullname">Sebastien Kronlund</div>
+								<div class="tweet-user-username">@kronlund.gif</div>
+							</div>
+						</div>
+						<div class="tweet-images-container">
+							<div class="tweet-image"></div>
+						</div>
+						<div class="tweet-text-container">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, neque. Ratione
+							atque laudantium, corporis dignissimos temporibus quia in enim ea debitis iste,
+							velit magnam, provident hic laborum tempore sed fuga.
+						</div>
+						<div class="tweet-date-container">
+							20 hours ago
+						</div>
+					</div>
+				</div>
+			</main>
+			<div class="tweets-sidebar-container">
+				<div class="tweets-sidebar">
+					<div class="tweet-trending">
+						<h5>Trending for you!</h5>
+						<ul>
+							<li>#Coding</li>
+							<li>#JavaScript</li>
+							<li>#Python</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/index.js" async defer></script>
+	</body>
 </html>

@@ -1,4 +1,177 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+ul {
+	padding: 0px;
+	margin: 0px;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	background-color: black;
+}
+
+/* NAVIGATION*/
+.navigation-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 10%;
+	max-width: 100px;
+	min-width: 70px;
+
+	font-size: 30px;
+	color: #dfdfdf;
+
+	border-right: 1px solid white;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 30px;
+	height: 50px;
+	width: 90%;
+}
+.logo i {
+	transition: color ease 0.2s;
+	color: #dfdfdf;
+}
+
+.home,
+.hashtag,
+.profile-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 50px;
+	width: 90%;
+	font-size: 1.5rem;
+}
+
+.home i,
+.hashtag i,
+.profile-container i {
+	transition: color ease 0.2s;
+	color: #dfdfdf;
+}
+
+.logo:hover,
+.home:hover,
+.hashtag:hover,
+.profile-container:hover {
+	border-right: 4px solid #42aad3;
+}
+
+.logo i:hover,
+.home i:hover,
+.hashtag i:hover,
+.profile-container i:hover {
+	color: #42aad3;
+}
+
+/* MAIN PAGE */
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+
+	background-color: black;
+}
+
+.tweets-search-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 90%;
+	margin: 20px;
+	height: 60px;
+
+	border-bottom: 3px solid #dfdfdf;
+	border-radius: 5px;
+}
+.tweets-search-container i {
+	color: #dfdfdf;
+	font-size: 50px;
+}
+.tweets-search-container input:focus,
+.tweets-search-container textarea:focus {
+	outline: none;
+}
+
+#tweets-search {
+	width: 100%;
+
+	padding: 0px 20px;
+	background: none;
+	border: none;
+
+	text-align: center;
+	font-size: 32px;
+	color: #dfdfdf;
+}
+
+.tweets-list-container {
+	display: flex;
+	flex-direction: column;
+
+	width: 90%;
+	margin: 20px;
+}
+
+/* SIDE BAR */
+.tweets-sidebar-container {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.tweets-sidebar {
+	width: 300px;
+	height: 500px;
+	margin-top: 30px;
+
+	background-color: white;
+	border: 1px solid #979797;
+	border-radius: 40px;
+}
+
+.tweet-trending {
+	height: 260px;
+	margin: 15px;
+	background-color: #ededed;
+	border-radius: 40px;
+	overflow: hidden;
+}
+.tweet-trending h5 {
+	font-size: 14px;
+	color: #848586;
+	padding: 30px 0px 15px 25px;
+	border-bottom: 1px solid #d8d8d8;
+}
+.tweet-trending ul {
+	margin: 0px;
+	list-style: none;
+}
+.tweet-trending li {
+	color: #a5a5a6;
+	padding: 15px 25px;
+	border-bottom: 1px solid #d8d8d8;
+	cursor: pointer;
 }

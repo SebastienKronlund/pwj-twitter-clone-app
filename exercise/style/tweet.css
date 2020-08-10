@@ -1,0 +1,52 @@
+.tweet-container {
+	display: flex;
+	flex-direction: column;
+
+	overflow: hidden;
+
+	border: 1px solid #dfdfdf;
+	border-radius: 25px;
+}
+
+.tweet-user-info {
+	display: flex;
+	align-items: center;
+}
+.tweet-user-profile {
+	height: 50px;
+	width: 50px;
+	margin: 10px 10px 10px 20px;
+	border-radius: 25px;
+
+	background-image: url(/img/seb_profile.jpg);
+	background-size: cover;
+}
+.tweet-user-name-container {
+}
+.tweet-user-fullname {
+	color: #dfdfdf;
+	font-size: 14px;
+}
+.tweet-user-username {
+	color: #a7a7a7;
+	font-size: 12px;
+}
+
+.tweet-images-container {
+	margin: 10px 20px 0px 20px;
+	height: 200px;
+	border: 1px solid #9c9c9c;
+	border-radius: 20px;
+}
+
+.tweet-text-container {
+	margin: 20px 20px 0px 20px;
+	font-size: 14px;
+	color: #dfdfdf;
+}
+
+.tweet-date-container {
+	margin: 10px 0px 10px 20px;
+	font-size: 12px;
+	color: #7a7e83;
+}
